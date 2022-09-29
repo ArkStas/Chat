@@ -1,0 +1,24 @@
+<ng-container *ngIf="!!user; else tmplEmptyUser">
+  <div class="imgContainer">
+    <img class="contactImg" src="{{ user.picture }}">
+  </div>
+  <div class="infoContainer">{{ user.name }}</div>
+
+  <ng-container *ngIf="!!messageText ; else tmpEmptyMessage">
+    <div class="messageContainer">{{messageText.text}}</div>
+    <div class="dataContainer">{{messageText.date | date:'mediumDate'}}</div>
+  </ng-container>
+
+  <ng-template #tmpEmptyMessage>
+    <div class="messageContainer"></div>
+    <div class="dataContainer"></div>
+  </ng-template>
+
+</ng-container>
+
+
+<ng-template #tmplEmptyUser>
+</ng-template>
+
+
+

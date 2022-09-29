@@ -1,0 +1,10 @@
+<div class="userAndContactsContainer">
+  <app-user [user]="dataService.user$ | async"></app-user>
+  <app-custom-input [type]="search"></app-custom-input>
+  <app-contacts-list [contacts]="dataService.filteredContactsByInput$ | async"></app-contacts-list>
+</div>
+<div class="messagesContainer">
+  <app-user [user]="dataService.contact$ | async"></app-user>
+  <app-messagelist [messages]="dataService.receivedFromStorageMessages$ | async"></app-messagelist>
+  <app-custom-input [type]="message"></app-custom-input>
+</div>

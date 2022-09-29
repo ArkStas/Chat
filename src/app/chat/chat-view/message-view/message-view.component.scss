@@ -1,0 +1,53 @@
+:host {
+  margin: 2%;
+}
+
+.messageContainer {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  grid-template-areas: 'img txt'
+                        'img date';
+  grid-gap: 5px;
+}
+
+.ImgContainer {
+  grid-area: img;
+
+  justify-self: start;
+
+  .inImg {
+    border-radius: 50%;
+    overflow: hidden;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+.TextContainer {
+  grid-area: txt;
+  border-radius: 15px;
+  padding: 1% 2%;
+}
+
+.in {
+  justify-self: start;
+}
+
+.inTxt {
+  background: #3D4255;
+  color: white;
+}
+
+.out {
+  justify-self: end;
+}
+
+.outTxt {
+  background: #E6E6E6;
+}
+
+.dateContainer {
+  padding: 0 2%;
+  font-size: 12px;
+  grid-area: date;
+}

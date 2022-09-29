@@ -1,0 +1,6 @@
+<div class="chatsTitle">
+  Chats
+</div>
+<app-contact-view *ngFor="let contact of contacts" [user]="contact"></app-contact-view>
+
+<!--<app-contact-view appOnHoverDirective *ngFor="let contact of (contacts)" [user]="contact"></app-contact-view>-->

@@ -1,0 +1,41 @@
+:host {
+
+  justify-self: center;
+  margin: 0 auto;
+  border: solid 1px gray;
+
+  background: #E6E6E6;
+
+  width: 1024px;
+  height: 70%;
+
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 100%;
+  justify-items: stretch;
+  justify-content: stretch;
+
+  .userAndContactsContainer {
+
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 70px 50px 1fr;
+
+    border-bottom: solid 1px lightgrey;
+
+    justify-items: stretch;
+    justify-content: stretch;
+
+  }
+
+  .messagesContainer{
+
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 70px 1fr 70px;
+
+    justify-items: stretch;
+    justify-content: stretch;
+
+  }
+}

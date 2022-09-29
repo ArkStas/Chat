@@ -1,0 +1,10 @@
+<ng-container *ngIf="!!user; else tmplEmptyUser">
+
+  <div class="imgContainer">
+    <img src="{{user.picture}}" alt="user avatar">
+  </div>
+  <div class="nameContainer">{{user.name}}</div>
+</ng-container>
+
+<ng-template #tmplEmptyUser>
+</ng-template>

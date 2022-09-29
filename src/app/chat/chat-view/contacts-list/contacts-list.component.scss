@@ -1,0 +1,23 @@
+:host {
+  display: flex;
+  flex-flow: column;
+  align-items: stretch;
+  align-content: flex-start;
+  overflow-y: auto;
+  background: #FBFBFB;
+
+  border-top: solid 1px lightgrey;
+  border-right: solid 1px lightgrey;
+
+  .chatsTitle {
+
+    padding: 3% 5%;
+    align-self: start;
+
+    font-size: 20px;
+    font-weight: 600;
+    color: #3DABDF;
+  }
+}
+
+

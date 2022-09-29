@@ -1,0 +1,31 @@
+<div [ngSwitch]="type">
+
+  <div *ngSwitchCase="'search'" class="inputContainer search">
+
+    <mat-icon class="customIcon">search</mat-icon>
+
+    <textarea
+              (input)="onInputChange($event)"
+              rows="1"
+              placeholder="Search"
+              class="customTextarea"></textarea>
+
+  </div>
+
+  <div *ngSwitchCase="'message'" class="inputContainer message">
+
+    <textarea
+      [(ngModel)]="txt"
+      (input)="onMessageChange($event)"
+      (keyup.enter)="onIconClick($event)"
+      rows="1"
+      placeholder="Message"
+      class="customTextarea"
+      cdkTextareaAutosize
+      cdkAutosizeMaxRows="4"></textarea>
+
+    <mat-icon class="customIcon" style="justify-self: end" (click)="onIconClick($event)">send</mat-icon>
+
+  </div>
+
+</div>
