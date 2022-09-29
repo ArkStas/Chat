@@ -12,7 +12,6 @@ import {OnHoverDirective} from './chat-view/contact-view/on-hover.directive';
 import {TextFieldModule} from "@angular/cdk/text-field";
 import { MessageViewComponent } from './chat-view/message-view/message-view.component';
 import {FormsModule} from "@angular/forms";
-import { AutorizationComponent } from './Autorization/autorization/autorization.component';
 
 @NgModule({
   declarations: [
@@ -23,8 +22,7 @@ import { AutorizationComponent } from './Autorization/autorization/autorization.
     CustomInputComponent,
     MessagelistComponent,
     OnHoverDirective,
-    MessageViewComponent,
-    AutorizationComponent
+    MessageViewComponent
   ],
   imports: [
     CommonModule,
