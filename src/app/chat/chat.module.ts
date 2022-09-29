@@ -10,7 +10,7 @@ import {HttpClientModule} from "@angular/common/http";
 import {MatIconModule} from "@angular/material/icon";
 import {OnHoverDirective} from './chat-view/contact-view/on-hover.directive';
 import {TextFieldModule} from "@angular/cdk/text-field";
-import { MessageViewComponent } from './chat-view/message-view/message-view.component';
+import {MessageViewComponent} from './chat-view/message-view/message-view.component';
 import {FormsModule} from "@angular/forms";
 
 @NgModule({
